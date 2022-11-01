@@ -78,7 +78,20 @@ span {
 
 /* site nav */
 
-
+.contact-icon {
+  display: flex;
+  justify-content: center;
+  display: inline-block;
+  gap: 10px; 
+}
+.contact-icon:hover,
+.contact-icon:focus {
+  color: #2196F3;
+}
+.contacts-list {
+  display: flex;
+  justify-content: center;
+}
 .main-nav {
   display: flex;
   align-items: center;
