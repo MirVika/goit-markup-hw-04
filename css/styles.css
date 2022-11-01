@@ -374,6 +374,35 @@ p {
   margin-bottom: 0;
 }
 
+/* clients */
+
+.clients-list {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.clients-link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  color:#AFB1B8;
+}
+.clients-icon {
+ fill:#AFB1B8;
+}
+.clients-link:hover,
+.clients-link:focus {
+  border-color:#2196F3;
+  color: #2196F3;
+}
+
 /* footer */
 .contact a {
   color: var(--primary-text-color);
