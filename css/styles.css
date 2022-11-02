@@ -82,12 +82,10 @@ span {
   display: flex;
   justify-content: center;
   display: inline-block;
-  gap: 10px; 
+  margin-right: 10px; 
+  fill: currentColor;
 }
-.contact-icon:hover,
-.contact-icon:focus {
-  color: #2196F3;
-}
+
 .contacts-list {
   display: flex;
   justify-content: center;
@@ -140,6 +138,8 @@ span {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: flex;
+  align-items: end;
 }
 .contacts.list a:hover,
 .contacts.list a:focus {
@@ -155,7 +155,7 @@ span {
   width: 1600px;
   height: 600px;
   background-image: url(../img/workers-hero.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4););
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4));
   background-color: rgba(47, 48, 58, 0.4);
   background-repeat: no-repeat;
   background-size: cover;
@@ -334,20 +334,20 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
+    fill: #AFB1B8;
     width: 44px;
     height: 44px;
     background-color: #ffffff;
     border-radius: 50%;
   }
-  .social-icon .social-icon{
-    fill: #AFB1B8;
+
+  .social-link:hover,
+  .social-link:focus {
+    background-color:var(--acent-text-color);
+    fill: var(--secondary-acent-text-color);
   }
-    .social-icon:hover {
-      fill: var(--secondary-acent-text-color);
-    }
-.social-icon:hover {
-  background-color: var(--acent-text-color);
-}
+  
+  
 .team {
   display: flex;
 }
@@ -383,6 +383,7 @@ span {
     text-align: center;
     letter-spacing: 0.03em;
     padding-top: 10px;
+    margin-bottom: 16px;
 }
 .team-name {
   padding-top: 30px;
