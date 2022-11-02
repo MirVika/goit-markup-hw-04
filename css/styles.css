@@ -399,29 +399,26 @@ p {
 
 .clients-list {
   display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    
-}
-.clients-link {
+  align-items: center;
+  gap: 30px;
   width: 170px;
   height: 92px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  color:#AFB1B8;
+  color: #AFB1B8;
+    
 }
+
 .clients-icon {
  fill:#AFB1B8;
 }
-.clients-link:hover,
-.clients-link:focus {
+.clients-list:hover,
+.clients-list:focus {
   border-color:#2196F3;
-  color: #2196F3;
+}
+.clients-icon:hover,
+.clients-icon:focus {
+  fill: var(--acent-text-color);
 }
 
 /* footer */
