@@ -79,9 +79,7 @@ span {
 /* site nav */
 
 .contact-icon {
-  display: flex;
-  justify-content: center;
-  display: inline-block;
+
   margin-right: 10px; 
   fill: currentColor;
 }
@@ -139,7 +137,7 @@ span {
   letter-spacing: 0.02em;
   text-decoration: none;
   display: flex;
-  align-items: end;
+  align-items: center;
 }
 .contacts.list a:hover,
 .contacts.list a:focus {
@@ -152,20 +150,17 @@ span {
 
 /* hero */
 .box {
-  width: 1600px;
+  max-width: 1600px;
   height: 600px;
-  background-image: url(../img/workers-hero.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4));
-  background-color: rgba(47, 48, 58, 0.4);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/workers-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0 auto;
 }
 .hero-title {
   width: 696px;
-  padding-top: 200px;
   margin: 0 auto;
   margin-top: 0;
-  margin-bottom: 40;
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
@@ -178,7 +173,7 @@ span {
 .hero {
   background-color: var(--bcd-black);
   text-align: center;
-  padding: 0px;
+  padding: 200px 0;
 }
 .primary.button {
   color: var(--secondary-acent-text-color);
@@ -235,6 +230,8 @@ span {
 .secondary.button:hover {
   color: var(--secondary-acent-text-color);
   background-color: var(--acent-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
 }
 
 .secondary.button {
@@ -250,6 +247,11 @@ span {
 }
 
 /* benefits */
+.ben {
+  display: flex;
+  gap: 30px;
+}
+
 .ben-list {
   display: flex;
   align-items: center;
@@ -258,7 +260,7 @@ span {
   background-color: #ffffff;
   border-radius: 4px;
   background-color: #F5F4FA;
-  gap: 30px;
+  justify-content: center;
 }
  
 .benefit-icon {
@@ -470,6 +472,38 @@ footer a {
 .address-item {
   margin-top: 20px;
 }
+.invite {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    color: #FFFFFF;
+}
+
+.link-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--secondary-acent-text-color);
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);;
+  border-radius: 50%;
+}
+
+.link-footer:hover,
+.link-footer:focus {
+  background-color: var(--acent-text-color);
+  fill: var(--secondary-acent-text-color);
+}
+
+
 
 /* portfolio */
 /* examples */
@@ -490,6 +524,8 @@ footer a {
   border: inherit;
   border: none transparent;
   padding: 6px 22px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  
 }
 .examples .title {
   color: var(--title-text-color);
@@ -517,11 +553,15 @@ footer a {
   text-align: center;
     background: #FFFFFF;
 box-sizing: border-box;
-  border: 1px solid #EEEEEE;
+    
+}
+.element-link {
+  display: block;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .ex-text {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 24px;
+  border: 1px solid #EEEEEE;
 }
 .element:nth-child(3n) {
   margin-right: 0pt;
